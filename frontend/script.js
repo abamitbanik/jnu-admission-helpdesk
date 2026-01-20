@@ -1,4 +1,4 @@
-const BACKEND = (window.BACKEND_URL || "https://jnu-admission-frontend.onrender.com").replace(/\/$/, "");
+const BACKEND = (window.BACKEND_URL || "https://jnu-admission-helpdesk.onrender.com").replace(/\/$/, "");
 
 const QUESTIONS = {
   circular: [
