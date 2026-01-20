@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="path/to/favicon.ico" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JNU Admission Help Desk</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="page">
+
+    <!-- ✅ FIXED HEADER -->
+    <header class="header">
+      <div class="brand">
+        <img class="brand-logo" src="assets/logo.png" alt="JNU Logo"/>
+        <div class="brand-text">
+          <div class="brand-title">JAGANNATH UNIVERSITY</div>
+          <div class="brand-subline">
+            <img class="cap-header" src="assets/cap.png" alt="cap"/>
+            <div class="brand-subtitle">Admission Help Desk</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <!-- ✅ LEFT SIDEBAR -->
+      <aside class="sidebar">
+        <div class="campus-wrap">
+          <img class="campus" src="assets/campus.png" alt="JNU Campus"/>
+        </div>
+
+        <div class="welcome">WELCOME</div>
+
+        <div class="section-title">Admission</div>
+
+        <button class="dd-head" onclick="toggleDropdown('ugMenu')">
+          Undergraduate Admission <span class="caret">▼</span>
+        </button>
+
+        <div id="ugMenu" class="dd-body hidden">
+          <button class="dd-item" onclick="showQuestions('circular')">Admission Circular <span class="caret">▼</span></button>
+          <button class="dd-item" onclick="showQuestions('apply')">Application Procedure <span class="caret">▼</span></button>
+          <button class="dd-item" onclick="showQuestions('payment')">Payment Process <span class="caret">▼</span></button>
+
+          <!-- ✅ NEW: QUESTIONS SHOW INSIDE SIDEBAR (NO MORE BELOW CHAT) -->
+          <div class="sidebar-qa">
+            <div id="panelTitle" class="panel-title"></div>
+            <ol id="questionList" class="sidebar-qa-list"></ol>
+          </div>
+        </div>
+
+        <div class="section-title">Important Links</div>
+        <ul class="links">
+          <li><a id="linkWebsite" href="#" target="_blank" rel="noopener noreferrer">Website</a></li>
+          <li><a id="linkAdmission" href="#" target="_blank" rel="noopener noreferrer">Admission Message & Date</a></li>
+        </ul>
+      </aside>
+
+      <!-- ✅ RIGHT CONTENT -->
+      <section class="content">
+        <!-- ✅ Status (backend connected / not connected) -->
+        <div id="status" class="status hidden"></div>
+
+        <!-- ✅ CHAT PANEL (fixed container; only messages scroll) -->
+        <div class="chat-area">
+          <div id="answerBox" class="answer-panel">
+
+            <!-- top bar -->
+            <div class="chat-topbar">
+              <div class="answer-header">JNU BOT</div>
+              <button class="clear-btn" onclick="clearChat()">Clear Chat</button>
+            </div>
+
+            <!-- ✅ ONLY THIS PART SCROLLS -->
+            <div id="chatMessages" class="chat-messages"></div>
+
+            <!-- bottom input bar -->
+            <div class="chat-inputbar">
+              <img class="cap" src="assets/keyboard.png" alt="cap"/>
+              <input id="input" class="chat-input" placeholder="Ask what you want to know." />
+              <button id="sendBtn" class="send-btn" onclick="sendMessage()">Send
+                <svg class="send-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M2.5 12L21.5 3.5l-4.3 17.4-6-6-3.6 3.6V13.2L2.5 12z"/>
+                </svg>
+              </button>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ✅ OLD qa-panel REMOVED (questions are now in sidebar) -->
+      </section>
+    </main>
+
+    <footer class="footer">Developed by @Amit Banik.</footer>
+  </div>
+
+  <script>
+  // লোকালে কিছু না দিলে script.js ডিফল্ট http://127.0.0.1:8000 নেবে
+  // লাইভে এখানে Render backend URL বসবে:
+  window.BACKEND_URL = "https://YOUR-BACKEND.onrender.com";
+</script>
+<script src="script.js"></script>
+</body>
+</html>
+

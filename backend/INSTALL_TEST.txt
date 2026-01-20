@@ -1,0 +1,93 @@
+JNU Helpdesk Backend (Minimal FastAPI) — Install & Test Guide
+============================================================
+
+✅ What you get
+- FastAPI backend with:
+  - GET  /health
+  - POST /chat   body: {"message":"..."}  response: {"answer":"..."}
+- MongoDB Atlas support
+- Dataset seed script (seed.py) using data/jnu_helpdesk_dataset.json
+
+------------------------------------------------------------
+Step 0: Prepare MongoDB Atlas
+------------------------------------------------------------
+1) Atlas → Network Access → IP Access List
+   - For testing: allow 0.0.0.0/0
+
+2) Atlas → Database Access
+   - Ensure user exists: amitbanik
+   - If password contains special characters, you MUST URL-encode it:
+       @ -> %40
+       # -> %23
+       , -> %2C
+
+------------------------------------------------------------
+Step 1: Open the project in VS Code
+------------------------------------------------------------
+- Extract the ZIP
+- In VS Code: File → Open Folder... → select this folder (where main.py exists)
+
+------------------------------------------------------------
+Step 2: Create & activate virtual environment
+------------------------------------------------------------
+Windows PowerShell:
+  python -m venv .venv
+  .\.venv\Scripts\Activate.ps1
+
+(If activation is blocked, run PowerShell as admin once:)
+  Set-ExecutionPolicy RemoteSigned
+
+------------------------------------------------------------
+Step 3: Install dependencies
+------------------------------------------------------------
+  pip install -r requirements.txt
+
+------------------------------------------------------------
+Step 4: Create .env
+------------------------------------------------------------
+- Copy .env.example to .env
+Windows:
+  copy .env.example .env
+
+- Open .env and set MONGODB_URI with your ENCODED_PASSWORD
+
+Example (DO NOT use literally):
+  mongodb+srv://amitbanik:ab%4012%23x%2C9@jnu-admission-helpdesk.6jdcl0l.mongodb.net/jnu_helpdesk?appName=jnu-admission-helpdesk
+
+------------------------------------------------------------
+Step 5 (Optional but Recommended): Seed the database
+------------------------------------------------------------
+  python seed.py
+
+You should see:
+  ✅ Seed completed. Upserted documents: ...
+
+------------------------------------------------------------
+Step 6: Run the FastAPI server
+------------------------------------------------------------
+  uvicorn main:app --reload --port 8000
+
+------------------------------------------------------------
+Step 7: Test endpoints
+------------------------------------------------------------
+A) Browser test:
+  http://127.0.0.1:8000/health
+
+B) Swagger UI:
+  http://127.0.0.1:8000/docs
+
+C) cURL test (PowerShell):
+  curl -Method POST "http://127.0.0.1:8000/chat" -ContentType "application/json" -Body '{"message":"Admission help"}'
+
+------------------------------------------------------------
+Common errors & fixes
+------------------------------------------------------------
+1) "ServerSelectionTimeoutError"
+   - Fix IP Allowlist in Atlas (0.0.0.0/0 for testing)
+   - Check connection string & password encoding
+
+2) "DB config error: MONGODB_URI missing"
+   - Ensure .env exists and has MONGODB_URI
+
+3) Password has @ or # and connection fails
+   - Encode: @ -> %40, # -> %23, , -> %2C

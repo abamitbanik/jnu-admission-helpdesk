@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Admin Panel (Intents)</title>
+  <style>
+    body { font-family: system-ui, Arial, sans-serif; margin: 24px; }
+    .row { display: flex; gap: 16px; flex-wrap: wrap; }
+    .card { border: 1px solid #ddd; border-radius: 10px; padding: 16px; max-width: 980px; }
+    textarea, input { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 8px; }
+    textarea { min-height: 120px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
+    button { padding: 10px 14px; border: 1px solid #333; background: #111; color: #fff; border-radius: 10px; cursor: pointer; }
+    button.secondary { background: #fff; color: #111; }
+    .muted { color: #666; }
+    .error { color: #b00020; }
+    .ok { color: #0a7a0a; }
+    table { width: 100%; border-collapse: collapse; }
+    th, td { border-bottom: 1px solid #eee; padding: 10px; vertical-align: top; }
+    th { text-align: left; }
+    .pill { display:inline-block; padding: 2px 8px; border: 1px solid #ddd; border-radius: 999px; margin: 2px; font-size: 12px; }
+    .actions { display:flex; gap:8px; }
+  </style>
+
+  <script>
+    // ✅ লাইভে গেলে এই URL বদলাবে:
+    // window.BACKEND_URL = "https://YOUR-BACKEND.onrender.com";
+    // লোকালে না দিলে ডিফল্ট localhost নিবে
+    window.BACKEND_URL = window.BACKEND_URL || "http://127.0.0.1:8000";
+
+    // Admin key prompt + store
+    window.ADMIN_KEY = localStorage.getItem("ADMIN_KEY") || "";
+    if (!window.ADMIN_KEY) {
+      window.ADMIN_KEY = prompt("Enter Admin Key (X-Admin-Key):") || "";
+      if (window.ADMIN_KEY) localStorage.setItem("ADMIN_KEY", window.ADMIN_KEY);
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Admin Panel (Intents)</h1>
+  <p class="muted">Auth: <b>X-Admin-Key</b> header. Backend: <span id="backendUrl"></span></p>
+
+  <div class="row">
+    <div class="card" style="flex:1; min-width: 320px;">
+      <h2>Create new intent</h2>
+      <p class="muted">Fill fields and click Create.</p>
+
+      <label>intent</label>
+      <input id="intent" placeholder="e.g. greeting" />
+
+      <label style="margin-top:10px;">answer</label>
+      <textarea id="answer" placeholder="Write answer text..."></textarea>
+
+      <label style="margin-top:10px;">tags (comma separated)</label>
+      <input id="tags" placeholder="admission, fees, eligibility" />
+
+      <label style="margin-top:10px;">enabled</label>
+      <input id="enabled" type="checkbox" checked />
+
+      <div style="margin-top:12px;" class="actions">
+        <button id="createBtn">Create</button>
+        <button class="secondary" id="clearBtn">Clear</button>
+      </div>
+
+      <p id="createMsg" class="muted"></p>
+    </div>
+
+    <div class="card" style="flex:1; min-width: 320px;">
+      <h2>Import JSON (array)</h2>
+      <p class="muted">Paste an array of items. Example: <code>[{"intent":"x","answer":"y","tags":[],"enabled":true,"meta":{}}]</code></p>
+      <textarea id="importBox" placeholder='[{"intent":"...","answer":"..."}]'></textarea>
+      <div style="margin-top:12px;" class="actions">
+        <button id="importBtn">Import</button>
+        <button class="secondary" id="refreshBtn">Refresh</button>
+        <button class="secondary" id="changeKeyBtn">Change Key</button>
+      </div>
+      <p id="importMsg" class="muted"></p>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:18px;">
+    <h2>Recent intents</h2>
+    <p id="listMsg" class="muted"></p>
+    <div style="overflow:auto;">
+      <table>
+        <thead>
+          <tr>
+            <th style="width: 220px;">intent</th>
+            <th>answer</th>
+            <th style="width: 220px;">tags</th>
+            <th style="width: 140px;">enabled</th>
+            <th style="width: 140px;">actions</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+    </div>
+  </div>
+
+<script>
+  const BASE = (window.BACKEND_URL || "").replace(/\/$/, "");
+  document.getElementById("backendUrl").textContent = BASE;
+
+  function headersJson() {
+    return {
+      "Content-Type": "application/json",
+      "X-Admin-Key": window.ADMIN_KEY || ""
+    };
+  }
+
+  async function api(path, options = {}) {
+    const res = await fetch(BASE + path, options);
+    if (!res.ok) {
+      const txt = await res.text().catch(() => "");
+      throw new Error(`${res.status} ${res.statusText} ${txt}`.trim());
+    }
+    return res.json();
+  }
+
+  function setMsg(id, text, cls="muted") {
+    const el = document.getElementById(id);
+    el.className = cls;
+    el.textContent = text;
+  }
+
+  function renderRows(items) {
+    const tb = document.getElementById("tbody");
+    tb.innerHTML = "";
+    for (const it of items) {
+      const tr = document.createElement("tr");
+
+      const tdIntent = document.createElement("td");
+      tdIntent.textContent = it.intent || "";
+      tr.appendChild(tdIntent);
+
+      const tdAns = document.createElement("td");
+      tdAns.textContent = it.answer || "";
+      tr.appendChild(tdAns);
+
+      const tdTags = document.createElement("td");
+      const tags = Array.isArray(it.tags) ? it.tags : [];
+      tdTags.innerHTML = tags.map(t => `<span class="pill">${String(t)}</span>`).join("");
+      tr.appendChild(tdTags);
+
+      const tdEn = document.createElement("td");
+      tdEn.textContent = (it.enabled === false) ? "false" : "true";
+      tr.appendChild(tdEn);
+
+      const tdAct = document.createElement("td");
+      const delBtn = document.createElement("button");
+      delBtn.textContent = "Delete";
+      delBtn.style.padding = "6px 10px";
+      delBtn.onclick = async () => {
+        if (!confirm("Delete this item?")) return;
+        try {
+          await api(`/admin/intents/${it._id}`, { method: "DELETE", headers: headersJson() });
+          setMsg("listMsg", "Deleted ✔", "ok");
+          await refresh();
+        } catch (e) {
+          setMsg("listMsg", String(e.message || e), "error");
+        }
+      };
+      tdAct.appendChild(delBtn);
+      tr.appendChild(tdAct);
+
+      tb.appendChild(tr);
+    }
+  }
+
+  async function refresh() {
+    setMsg("listMsg", "Loading...");
+    try {
+      const items = await api("/admin/intents", { method: "GET", headers: headersJson() });
+      renderRows(items);
+      setMsg("listMsg", `Loaded ${items.length} items ✔`, "ok");
+    } catch (e) {
+      setMsg("listMsg", "Failed to fetch: " + (e.message || e), "error");
+    }
+  }
+
+  document.getElementById("refreshBtn").onclick = refresh;
+
+  document.getElementById("changeKeyBtn").onclick = () => {
+    const k = prompt("Enter Admin Key (X-Admin-Key):") || "";
+    if (k) {
+      window.ADMIN_KEY = k;
+      localStorage.setItem("ADMIN_KEY", k);
+      refresh();
+    }
+  };
+
+  document.getElementById("clearBtn").onclick = () => {
+    document.getElementById("intent").value = "";
+    document.getElementById("answer").value = "";
+    document.getElementById("tags").value = "";
+    document.getElementById("enabled").checked = true;
+    setMsg("createMsg", "");
+  };
+
+  document.getElementById("createBtn").onclick = async () => {
+    const intent = document.getElementById("intent").value.trim();
+    const answer = document.getElementById("answer").value.trim();
+    const tags = document.getElementById("tags").value.split(",").map(s => s.trim()).filter(Boolean);
+    const enabled = document.getElementById("enabled").checked;
+
+    if (!intent || !answer) {
+      setMsg("createMsg", "intent এবং answer বাধ্যতামূলক", "error");
+      return;
+    }
+
+    setMsg("createMsg", "Creating...");
+    try {
+      await api("/admin/intents", {
+        method: "POST",
+        headers: headersJson(),
+        body: JSON.stringify({ intent, answer, tags, enabled, meta: {} })
+      });
+      setMsg("createMsg", "Created ✔", "ok");
+      await refresh();
+    } catch (e) {
+      setMsg("createMsg", String(e.message || e), "error");
+    }
+  };
+
+  document.getElementById("importBtn").onclick = async () => {
+    setMsg("importMsg", "Importing...");
+    let arr;
+    try {
+      arr = JSON.parse(document.getElementById("importBox").value);
+      if (!Array.isArray(arr)) throw new Error("JSON must be an array");
+    } catch (e) {
+      setMsg("importMsg", "Invalid JSON: " + (e.message || e), "error");
+      return;
+    }
+
+    let ok = 0, fail = 0;
+    for (const item of arr) {
+      try {
+        await api("/admin/intents", {
+          method: "POST",
+          headers: headersJson(),
+          body: JSON.stringify(item)
+        });
+        ok++;
+      } catch (e) {
+        fail++;
+      }
+    }
+    setMsg("importMsg", `Done. success=${ok}, failed=${fail}`, fail ? "error" : "ok");
+    await refresh();
+  };
+
+  // initial load
+  refresh();
+</script>
+</body>
+</html>

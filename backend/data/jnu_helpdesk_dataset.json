@@ -1,0 +1,1348 @@
+[
+  {
+    "category": "greeting",
+    "sub_category": "hello",
+    "question": "Hi",
+    "alt_questions": [
+      "hi",
+      "hello",
+      "hey",
+      "hy",
+      "hii",
+      "hlw",
+      "hello there",
+      "hi there",
+      "হাই",
+      "হ্যালো",
+      "হেলো",
+      "need help",
+      "can you help me?",
+      "help"
+    ],
+    "answer": "Hello! 👋 Welcome to Jagannath University! How can I help you with your queries today? 🎓",
+    "tags": [
+      "hi",
+      "hello",
+      "greeting",
+      "help",
+      "welcome",
+      "হাই",
+      "হ্যালো"
+    ],
+    "source": "manual"
+  },
+  {
+    "category": "greeting",
+    "sub_category": "hello_bn",
+    "question": "হাই",
+    "alt_questions": [
+      "হাই",
+      "হ্যালো",
+      "হেলো",
+      "হাই বট",
+      "হ্যালো বট",
+      "hello",
+      "hi",
+      "need help",
+      "সাহায্য",
+      "সাহায্য দরকার"
+    ],
+    "answer": "হ্যালো! 👋 জগন্নাথ বিশ্ববিদ্যালয়ে স্বাগতম! আজ আপনার প্রশ্নের উত্তরে আমি কীভাবে সাহায্য করতে পারি? 🎓",
+    "tags": [
+      "হাই",
+      "হ্যালো",
+      "স্বাগতম",
+      "সাহায্য",
+      "greeting",
+      "hello"
+    ],
+    "source": "manual"
+  },
+  {
+    "category": "greeting",
+    "sub_category": "help",
+    "question": "Need Help",
+    "alt_questions": [
+      "need help",
+      "help me",
+      "can you help me?",
+      "i need help",
+      "support",
+      "assistance",
+      "সাহায্য দরকার",
+      "সাহায্য চাই",
+      "হেল্প"
+    ],
+    "answer": "Hi! 👋 Welcome to Jagannath University! How can I help you with your queries today? 🎓",
+    "tags": [
+      "help",
+      "support",
+      "assistance",
+      "সাহায্য",
+      "greeting"
+    ],
+    "source": "manual"
+  },
+  {
+    "category": "greeting",
+    "sub_category": "help_bn",
+    "question": "সাহায্য দরকার",
+    "alt_questions": [
+      "সাহায্য দরকার",
+      "সাহায্য চাই",
+      "আমাকে সাহায্য করুন",
+      "হেল্প",
+      "help",
+      "need help",
+      "can you help me?"
+    ],
+    "answer": "হাই! 👋 জগন্নাথ বিশ্ববিদ্যালয়ে স্বাগতম! আজ আপনার প্রশ্নের উত্তরে আমি কীভাবে সাহায্য করতে পারি? 🎓",
+    "tags": [
+      "সাহায্য",
+      "হেল্প",
+      "help",
+      "greeting"
+    ],
+    "source": "manual"
+  },
+  {
+    "category": "greeting",
+    "sub_category": "bot_identity",
+    "question": "Who are you",
+    "alt_questions": [
+      "who are you",
+      "who are you?",
+      "what are you",
+      "what is this bot",
+      "who made you",
+      "about you",
+      "tell me about yourself",
+      "কে তুমি",
+      "তুমি কে",
+      "এই বট কে"
+    ],
+    "answer": "Hello! 👋 I am Jagannath University's Artificial Intelligence-based Chatbot. I am always with you to help you.",
+    "tags": [
+      "who_are_you",
+      "bot",
+      "identity",
+      "about_bot",
+      "introduction"
+    ],
+    "source": "manual"
+  },
+  {
+    "category": "greeting",
+    "sub_category": "bot_identity_bn",
+    "question": "কে তুমি",
+    "alt_questions": [
+      "কে তুমি",
+      "তুমি কে",
+      "এই বট কে",
+      "এই চ্যাটবট কে",
+      "তোমার পরিচয় কী",
+      "who are you",
+      "what are you"
+    ],
+    "answer": "আমি জগন্নাথ বিশ্ববিদ্যালয়ের কৃত্রিম বুদ্ধিমত্তা ভিত্তিক চ্যাটবট। আপনাকে সাহায্যের জন্য আমি সব সময় আপনার সাথে আছি।",
+    "tags": [
+      "কে_তুমি",
+      "চ্যাটবট",
+      "পরিচয়",
+      "bot",
+      "identity"
+    ],
+    "source": "manual"
+  },
+  {
+    "category": "goodbye",
+    "sub_category": "bye_en",
+    "question": "Bye",
+    "alt_questions": [
+      "bye",
+      "bye bye",
+      "goodbye",
+      "see you",
+      "see you later",
+      "take care",
+      "ok bye",
+      "thanks bye",
+      "বিদায়",
+      "আবার দেখা হবে"
+    ],
+    "answer": "It was nice talking to you. Have a nice day. 😊",
+    "tags": [
+      "bye",
+      "goodbye",
+      "see_you",
+      "exit",
+      "farewell"
+    ],
+    "source": "manual"
+  },
+  {
+    "category": "goodbye",
+    "sub_category": "bye_bn",
+    "question": "বিদায়",
+    "alt_questions": [
+      "বিদায়",
+      "আলবিদা",
+      "আবার দেখা হবে",
+      "পরে কথা হবে",
+      "চলে যাচ্ছি",
+      "bye",
+      "bye bye",
+      "goodbye"
+    ],
+    "answer": "তোমার সাথে কথা বলে ভালো লাগলো। তোমার দিনটা শুভ হোক। 😊",
+    "tags": [
+      "বিদায়",
+      "আলবিদা",
+      "farewell",
+      "bye",
+      "exit"
+    ],
+    "source": "manual"
+  },
+  {
+    "category": "create",
+    "sub_category": "creator_en",
+    "question": "Who made you",
+    "alt_questions": [
+      "who made you",
+      "who created you",
+      "who built you",
+      "who developed you",
+      "who is your creator",
+      "who designed you",
+      "who is behind you",
+      "তোমাকে কে বানিয়েছে",
+      "এই বট কে বানিয়েছে"
+    ],
+    "answer": "Amit Banik, a student of the Professional Program in the Computer Science and Engineering Department of Jagannath University, has developed me.",
+    "tags": [
+      "creator",
+      "developer",
+      "who_made_you",
+      "about_bot",
+      "amit_banik"
+    ],
+    "source": "manual"
+  },
+  {
+    "category": "create",
+    "sub_category": "creator_bn",
+    "question": "তোমাকে কে বানিয়েছে",
+    "alt_questions": [
+      "তোমাকে কে বানিয়েছে",
+      "তোমার নির্মাতা কে",
+      "এই বট কে বানিয়েছে",
+      "কে তোমাকে তৈরি করেছে",
+      "এই চ্যাটবট কে বানিয়েছে",
+      "who made you",
+      "who created you"
+    ],
+    "answer": "জগন্নাথ বিশ্ববিদ্যালয়ের কম্পিউটার সাইন্স অ্যান্ড ইঞ্জিনিয়ারিং বিভাগের প্রফেশনাল প্রোগ্রামের শিক্ষার্থী অমিত বনিক আমাকে উন্নয়ন করেছেন।",
+    "tags": [
+      "নির্মাতা",
+      "ডেভেলপার",
+      "চ্যাটবট",
+      "অমিত_বনিক",
+      "creator"
+    ],
+    "source": "manual"
+  },
+  {
+    "category": "university_information",
+    "sub_category": "undergraduate_programs",
+    "question": "What undergraduate programs are available",
+    "alt_questions": [
+      "what undergraduate programs are available",
+      "what bachelor programs are offered",
+      "what courses are available",
+      "what programs does jnu offer",
+      "available undergraduate programs",
+      "bachelor programs in jnu",
+      "জগন্নাথ বিশ্ববিদ্যালয়ে কোন কোন অনার্স কোর্স আছে",
+      "জগন্নাথ বিশ্ববিদ্যালয়ে অনার্স প্রোগ্রাম",
+      "undergraduate course list",
+      "UG programs"
+    ],
+    "answer": "Undergraduate programs are available in the faculties of Science, Arts, Business Studies, Law, and Social Sciences.",
+    "tags": [
+      "undergraduate",
+      "bachelor",
+      "programs",
+      "courses",
+      "jnu"
+    ],
+    "is_default": true,
+    "show_on_frontend": true,
+    "source": "manual"
+  },
+  {
+    "category": "university_information",
+    "sub_category": "postgraduate_programs",
+    "question": "Does the university offer postgraduate degree courses",
+    "alt_questions": [
+      "does the university offer postgraduate degree courses",
+      "does jnu offer masters programs",
+      "postgraduate programs in jnu",
+      "masters programs available",
+      "msc programs in jnu",
+      "ma programs in jnu",
+      "জগন্নাথ বিশ্ববিদ্যালয়ে মাস্টার্স আছে কি",
+      "জগন্নাথ বিশ্ববিদ্যালয়ে স্নাতকোত্তর কোর্স আছে কি",
+      "postgraduate courses"
+    ],
+    "answer": "Yes, Jagannath University offers Master's (Postgraduate) programs in most departments.",
+    "tags": [
+      "postgraduate",
+      "masters",
+      "msc",
+      "ma",
+      "jnu"
+    ],
+    "source": "manual"
+  },
+  {
+    "category": "selection_process",
+    "sub_category": "gpa_counting",
+    "question": "Which GPA is counted for the selection list",
+    "alt_questions": [
+      "which gpa is counted for the selection list",
+      "which gpa is considered",
+      "gpa counting system",
+      "ssc hsc gpa counted?",
+      "is ssc and hsc gpa added",
+      "selection gpa calculation",
+      "সিলেকশনের জন্য কোন জিপিএ ধরা হয়",
+      "সিলেকশনে কোন জিপিএ গণনা করা হয়"
+    ],
+    "answer": "SSC + HSC combined GPA is counted for the selection list.",
+    "tags": [
+      "gpa",
+      "selection",
+      "ssc",
+      "hsc",
+      "admission"
+    ],
+    "source": "manual"
+  },
+  {
+    "category": "selection_process",
+    "sub_category": "minimum_gpa_en",
+    "question": "What is the minimum GPA required for selection",
+    "alt_questions": [
+      "what is the minimum gpa required for selection",
+      "minimum gpa for selection",
+      "how much gpa needed",
+      "required gpa for admission",
+      "can i get selected with 8 gpa",
+      "selection minimum gpa",
+      "সিলেকশনের জন্য ন্যূনতম জিপিএ কত"
+    ],
+    "answer": "There is a possibility of selection if you have a total of 8 points in SSC and HSC.",
+    "tags": [
+      "minimum_gpa",
+      "selection",
+      "admission",
+      "ssc",
+      "hsc"
+    ],
+    "is_default": true,
+    "show_on_frontend": true,
+    "source": "manual"
+  },
+  {
+    "category": "selection_process",
+    "sub_category": "minimum_gpa_bn_short",
+    "question": "কত জিপিএ সিলেক্ট হতে লাগবে",
+    "alt_questions": [
+      "কত জিপিএ লাগবে",
+      "সিলেক্ট হতে কত জিপিএ দরকার",
+      "ন্যূনতম জিপিএ কত",
+      "ভর্তি হতে কত জিপিএ লাগে",
+      "gpa koto lagbe",
+      "minimum gpa koto"
+    ],
+    "answer": "SSC এবং HSC তে মোট ৮ পয়েন্ট থাকলে নির্বাচনের সম্ভাবনা রয়েছে।",
+    "tags": [
+      "জিপিএ",
+      "সিলেকশন",
+      "ভর্তি",
+      "ssc",
+      "hsc"
+    ],
+    "source": "manual"
+  },
+  {
+    "category": "selection_process",
+    "sub_category": "minimum_gpa_bn_formal",
+    "question": "সিলেকশনের জন্য ন্যূনতম জিপিএ কত লাগবে?",
+    "alt_questions": [
+      "সিলেকশনের জন্য ন্যূনতম জিপিএ কত",
+      "ন্যূনতম জিপিএ কত লাগবে",
+      "ভর্তির জন্য জিপিএ কত",
+      "ssc hsc মিলিয়ে কত জিপিএ লাগবে",
+      "minimum gpa for selection"
+    ],
+    "answer": "এসএসসি এবং এইচএসসিতে মোট ৮ পয়েন্ট হলে সিলেক্ট হওয়ার সম্ভাবনা আছে।",
+    "tags": [
+      "ন্যূনতম_জিপিএ",
+      "সিলেকশন",
+      "ভর্তি",
+      "ssc",
+      "hsc"
+    ],
+    "source": "manual"
+  },
+  {
+    "category": "admission_requirements_2025_2026",
+    "sub_category": "unit_a_science_gpa_en",
+    "question": "What is the minimum GPA required for applying to A (Science) unit?",
+    "alt_questions": [
+      "minimum gpa for A unit",
+      "A unit gpa requirement",
+      "science unit gpa",
+      "A unit science gpa",
+      "A unit apply gpa",
+      "এ ইউনিট জিপিএ কত",
+      "বিজ্ঞান ইউনিটে জিপিএ কত লাগবে"
+    ],
+    "answer": "A Unit (Science) SSC and HSC combined GPA must be at least 8.00. However, GPA below 3.50 in any exam will not be accepted.",
+    "tags": [
+      "a_unit",
+      "science",
+      "gpa",
+      "admission",
+      "ssc",
+      "hsc"
+    ],
+    "is_default": true,
+    "show_on_frontend": true,
+    "source": "manual"
+  },
+  {
+    "category": "admission_requirements_2025_2026",
+    "sub_category": "unit_b_arts_law_gpa_en",
+    "question": "What is the minimum GPA required for applying to B (Arts and Law) unit?",
+    "alt_questions": [
+      "minimum gpa for B unit",
+      "B unit gpa requirement",
+      "arts unit gpa",
+      "law unit gpa",
+      "B unit apply gpa",
+      "বি ইউনিট জিপিএ কত"
+    ],
+    "answer": "B Unit (Faculty of Arts and Law) SSC and HSC combined GPA must be at least 7.00. However, GPA below 3.00 in any examination is not allowed.",
+    "tags": [
+      "b_unit",
+      "arts",
+      "law",
+      "gpa",
+      "admission"
+    ],
+    "is_default": true,
+    "show_on_frontend": true,
+    "source": "manual"
+  },
+  {
+    "category": "admission_requirements_2025_2026",
+    "sub_category": "unit_c_business_gpa_en",
+    "question": "What is the minimum GPA required for applying to C (Business Education) unit?",
+    "alt_questions": [
+      "minimum gpa for C unit",
+      "C unit business gpa",
+      "business education gpa",
+      "C unit apply gpa",
+      "সি ইউনিট জিপিএ কত"
+    ],
+    "answer": "C Unit (Business Education) SSC and HSC combined GPA must be at least 7.50. However, GPA below 3.00 in any exam will not be accepted.",
+    "tags": [
+      "c_unit",
+      "business_education",
+      "gpa",
+      "admission"
+    ],
+    "is_default": true,
+    "show_on_frontend": true,
+    "source": "manual"
+  },
+  {
+    "category": "admission_requirements_2025_2026",
+    "sub_category": "unit_d_social_science_gpa_en",
+    "question": "What is the minimum GPA required for D (Faculty of Social Sciences) unit?",
+    "alt_questions": [
+      "minimum gpa for D unit",
+      "D unit gpa",
+      "social science unit gpa",
+      "D unit apply gpa",
+      "ডি ইউনিট জিপিএ কত"
+    ],
+    "answer": "D Unit (Faculty of Social Sciences) SSC and HSC combined GPA must be at least 7.00. However, GPA below 3.00 in any examination is not allowed.",
+    "tags": [
+      "d_unit",
+      "social_science",
+      "gpa",
+      "admission"
+    ],
+    "source": "manual"
+  },
+  {
+    "category": "admission_requirements_2025_2026",
+    "sub_category": "unit_e_fine_arts_gpa_en",
+    "question": "What is the minimum GPA required for E (Fine Arts) unit?",
+    "alt_questions": [
+      "minimum gpa for E unit",
+      "E unit fine arts gpa",
+      "fine arts unit gpa",
+      "E unit apply gpa",
+      "ই ইউনিট জিপিএ কত"
+    ],
+    "answer": "E Unit (Fine Arts) SSC and HSC combined GPA must be at least 6.50. However, GPA below 3.00 in any exam will not be accepted.",
+    "tags": [
+      "e_unit",
+      "fine_arts",
+      "gpa",
+      "admission"
+    ],
+    "source": "manual"
+  },
+  {
+    "category": "admission_requirements_2025_2026",
+    "sub_category": "department_change_en",
+    "question": "Can I change the department and take the exam in which unit?",
+    "alt_questions": [
+      "can i change department",
+      "department change unit",
+      "can i apply other unit",
+      "unit change possible?",
+      "বিভাগ পরিবর্তন করা যাবে কি"
+    ],
+    "answer": "There is an opportunity to change departments in B, C, and D units, meaning students in other branches can also apply.",
+    "tags": [
+      "department_change",
+      "unit_change",
+      "admission"
+    ],
+    "is_default": true,
+    "show_on_frontend": true,
+    "source": "manual"
+  },
+  {
+    "category": "admission_requirements_2025_2026",
+    "sub_category": "second_time_admission_en",
+    "question": "Is there a chance for second time admission in Jagannath University?",
+    "alt_questions": [
+      "second time admission jnu",
+      "can i apply second time",
+      "second chance admission",
+      "সেকেন্ড টাইম ভর্তি আছে কি"
+    ],
+    "answer": "There is no chance for second time admission test in Jagannath University.",
+    "tags": [
+      "second_time",
+      "admission_policy",
+      "jnu"
+    ],
+    "is_default": true,
+    "show_on_frontend": true,
+    "source": "manual"
+  },
+  {
+    "category": "admission_requirements_2025_2026",
+    "sub_category": "unit_a_science_gpa_bn",
+    "question": "এ (বিজ্ঞান) ইউনিটে আবেদনের জন্য ন্যূনতম কত জিপিএ প্রয়োজন?",
+    "alt_questions": [
+      "এ ইউনিটে জিপিএ কত",
+      "বিজ্ঞান ইউনিট জিপিএ",
+      "A ইউনিট জিপিএ",
+      "science unit gpa koto"
+    ],
+    "answer": "এ ইউনিট (বিজ্ঞান) এসএসসি ও এইচএসসি মিলে কমপক্ষে জিপিএ ৮.০০ থাকতে হবে। তবে কোন পরীক্ষায় জিপিএ ৩.৫০ এর নিচে থাকলে হবে না।",
+    "tags": [
+      "এ_ইউনিট",
+      "বিজ্ঞান",
+      "জিপিএ",
+      "ভর্তি"
+    ],
+    "source": "manual"
+  },
+  {
+    "category": "admission_requirements_2025_2026",
+    "sub_category": "unit_b_arts_law_gpa_bn",
+    "question": "বি (কলা ও আইন অনুষদে) ইউনিটে আবেদনের জন্য ন্যূনতম কত জিপিএ প্রয়োজন?",
+    "alt_questions": [
+      "বি ইউনিটে জিপিএ কত",
+      "arts law unit gpa",
+      "B unit gpa koto"
+    ],
+    "answer": "বি ইউনিট (কলা ও আইন অনুষদ) এসএসসি ও এইচএসসি মিলে কমপক্ষে জিপিএ ৭.০০ থাকতে হবে। তবে কোন পরীক্ষায় জিপিএ ৩.০০ এর নিচে থাকলে হবে না।",
+    "tags": [
+      "বি_ইউনিট",
+      "কলা",
+      "আইন",
+      "জিপিএ"
+    ],
+    "source": "manual"
+  },
+  {
+    "category": "admission_requirements_2025_2026",
+    "sub_category": "unit_c_business_gpa_bn",
+    "question": "সি (ব্যবসায় শিক্ষা) ইউনিটে আবেদনের জন্য ন্যূনতম কত জিপিএ প্রয়োজন?",
+    "alt_questions": [
+      "সি ইউনিটে জিপিএ কত",
+      "business unit gpa",
+      "C unit gpa koto"
+    ],
+    "answer": "সি ইউনিট (ব্যবসায় শিক্ষা) এসএসসি ও এইচএসসি মিলে কমপক্ষে জিপিএ ৭.৫০ থাকতে হবে। তবে কোন পরীক্ষায় জিপিএ ৩.০০ এর নিচে থাকলে হবে না।",
+    "tags": [
+      "সি_ইউনিট",
+      "ব্যবসায়_শিক্ষা",
+      "জিপিএ"
+    ],
+    "source": "manual"
+  },
+  {
+    "category": "admission_requirements_2025_2026",
+    "sub_category": "unit_d_social_science_gpa_bn",
+    "question": "ডি (সামাজিক বিজ্ঞান অনুষদ) ইউনিটে আবেদনের জন্য ন্যূনতম কত জিপিএ প্রয়োজন?",
+    "alt_questions": [
+      "ডি ইউনিটে জিপিএ কত",
+      "social science unit gpa",
+      "D unit gpa koto"
+    ],
+    "answer": "ডি ইউনিট (সামাজিক বিজ্ঞান অনুষদ) এসএসসি ও এইচএসসি মিলে কমপক্ষে জিপিএ ৭.০০ থাকতে হবে। তবে কোন পরীক্ষায় জিপিএ ৩.০০ এর নিচে থাকলে হবে না।",
+    "tags": [
+      "ডি_ইউনিট",
+      "সামাজিক_বিজ্ঞান",
+      "জিপিএ"
+    ],
+    "source": "manual"
+  },
+  {
+    "category": "admission_requirements_2025_2026",
+    "sub_category": "unit_e_fine_arts_gpa_bn",
+    "question": "ই (চারুকলা) ইউনিটে আবেদনের জন্য ন্যূনতম কত জিপিএ প্রয়োজন?",
+    "alt_questions": [
+      "ই ইউনিটে জিপিএ কত",
+      "fine arts unit gpa",
+      "E unit gpa koto"
+    ],
+    "answer": "ই ইউনিট (চারুকলা) এসএসসি ও এইচএসসি মিলে কমপক্ষে জিপিএ ৬.৫০ থাকতে হবে। তবে কোন পরীক্ষায় জিপিএ ৩.০০ এর নিচে থাকলে হবে না।",
+    "tags": [
+      "ই_ইউনিট",
+      "চারুকলা",
+      "জিপিএ"
+    ],
+    "source": "manual"
+  },
+  {
+    "category": "admission_requirements_2025_2026",
+    "sub_category": "department_change_bn",
+    "question": "বিভাগ পরিবর্তন করার সুযোগ আছে কোন ইউনিটে?",
+    "alt_questions": [
+      "বিভাগ পরিবর্তন করা যাবে কি",
+      "unit change আছে কি",
+      "department change kora jabe?"
+    ],
+    "answer": "বিভাগ পরিবর্তনের সুযোগ রয়েছে বি, সি ও ডি ইউনিটে অর্থাৎ অন্য শাখায় শিক্ষার্থীরাও আবেদন করতে পারবে।",
+    "tags": [
+      "বিভাগ_পরিবর্তন",
+      "ইউনিট",
+      "ভর্তি"
+    ],
+    "source": "manual"
+  },
+  {
+    "category": "admission_requirements_2025_2026",
+    "sub_category": "second_time_admission_bn",
+    "question": "জগন্নাথ বিশ্ববিদ্যালয়ে সেকেন্ড টাইম ভর্তির সুযোগ আছে কি?",
+    "alt_questions": [
+      "second time admission jnu",
+      "সেকেন্ড টাইম ভর্তি",
+      "আবার ভর্তি দেওয়া যাবে কি"
+    ],
+    "answer": "দুঃখিত শিক্ষার্থী। জগন্নাথ বিশ্ববিদ্যালয়ে সেকেন্ড টাইম ভর্তি পরীক্ষার সুযোগ নেই।",
+    "tags": [
+      "সেকেন্ড_টাইম",
+      "ভর্তি_নীতি",
+      "jnu"
+    ],
+    "source": "manual"
+  },
+  {
+    "category": "time_mark_distribution",
+    "sub_category": "exam_duration_en",
+    "question": "What is the duration of the admission exam test?",
+    "alt_questions": [
+      "exam duration",
+      "how long is the admission test",
+      "admission exam time",
+      "test duration jnu",
+      "ভর্তি পরীক্ষার সময় কত"
+    ],
+    "answer": "The duration of the admission test is 1 hour.",
+    "tags": [
+      "exam_duration",
+      "time",
+      "admission_test"
+    ],
+    "source": "manual"
+  },
+  {
+    "category": "time_mark_distribution",
+    "sub_category": "question_type_en",
+    "question": "What type of questions in the admission test?",
+    "alt_questions": [
+      "type of questions",
+      "question pattern",
+      "mcq or written",
+      "admission test question type",
+      "ভর্তি পরীক্ষার প্রশ্নের ধরন"
+    ],
+    "answer": "The type of questions is both written and MCQ.",
+    "tags": [
+      "question_type",
+      "mcq",
+      "written",
+      "admission_test"
+    ],
+    "source": "manual"
+  },
+  {
+    "category": "time_mark_distribution",
+    "sub_category": "total_marks_en",
+    "question": "How many total marks is the admission test?",
+    "alt_questions": [
+      "total marks of admission test",
+      "exam marks distribution",
+      "how many marks",
+      "mcq written gpa marks",
+      "ভর্তি পরীক্ষার মোট মার্ক কত"
+    ],
+    "answer": "The test is worth a total of 100 marks. MCQ marks are 24 and written marks are 48 (total 72). GPA marks are 28—12 from SSC and 16 from HSC. The final result is prepared based on the total 100 marks.",
+    "tags": [
+      "marks",
+      "mark_distribution",
+      "mcq",
+      "written",
+      "gpa"
+    ],
+    "source": "manual"
+  },
+  {
+    "category": "time_mark_distribution",
+    "sub_category": "result_info_en",
+    "question": "How can I know the results of the admission test?",
+    "alt_questions": [
+      "how to know admission result",
+      "where to see result",
+      "admission test result",
+      "result published where",
+      "ভর্তি পরীক্ষার ফলাফল কিভাবে জানা যাবে"
+    ],
+    "answer": "When the results of the admission test are ready, they will be published on the official website of Jagannath University.",
+    "tags": [
+      "result",
+      "admission_result",
+      "website",
+      "jnu"
+    ],
+    "source": "manual"
+  },
+  {
+    "category": "time_mark_distribution",
+    "sub_category": "exam_duration_bn",
+    "question": "ভর্তি পরীক্ষার সময় কত?",
+    "alt_questions": [
+      "ভর্তি পরীক্ষার সময় কত",
+      "পরীক্ষা কতক্ষণ",
+      "exam time koto"
+    ],
+    "answer": "ভর্তি পরীক্ষার সময় ১ ঘন্টা।",
+    "tags": [
+      "পরীক্ষার_সময়",
+      "ভর্তি",
+      "সময়"
+    ],
+    "source": "manual"
+  },
+  {
+    "category": "time_mark_distribution",
+    "sub_category": "question_type_bn",
+    "question": "ভর্তি পরীক্ষার প্রশ্নের ধরন কেমন হয়?",
+    "alt_questions": [
+      "প্রশ্নের ধরন কেমন",
+      "mcq না লিখিত",
+      "ভর্তি পরীক্ষার প্রশ্ন"
+    ],
+    "answer": "প্রশ্নের ধরন লিখিত এবং এমসিকিউ উভয়ই হয়।",
+    "tags": [
+      "প্রশ্নের_ধরন",
+      "mcq",
+      "লিখিত"
+    ],
+    "source": "manual"
+  },
+  {
+    "category": "time_mark_distribution",
+    "sub_category": "total_marks_bn",
+    "question": "মোট কত মার্কে ভর্তি পরীক্ষা হয়?",
+    "alt_questions": [
+      "মোট কত নম্বর",
+      "ভর্তি পরীক্ষার মার্ক বণ্টন",
+      "mcq লিখিত মার্ক কত"
+    ],
+    "answer": "মোট ১০০ মার্কে পরীক্ষা হয়। এমসিকিউ ২৪ এবং লিখিত ৪৮ মার্ক (মোট ৭২)। জিপিএ মার্ক ২৮—এসএসসি থেকে ১২ এবং এইচএসসি থেকে ১৬। এই মোট ১০০ নম্বরের ভিত্তিতে চূড়ান্ত ফল প্রস্তুত করা হয়।",
+    "tags": [
+      "মার্ক",
+      "মার্ক_বণ্টন",
+      "ভর্তি"
+    ],
+    "source": "manual"
+  },
+  {
+    "category": "time_mark_distribution",
+    "sub_category": "result_info_bn",
+    "question": "ভর্তি পরীক্ষার ফলাফল কিভাবে জানতে পারবো?",
+    "alt_questions": [
+      "ফলাফল কবে ও কোথায়",
+      "ভর্তি পরীক্ষার রেজাল্ট",
+      "result kothay pabo"
+    ],
+    "answer": "ভর্তি পরীক্ষার ফলাফল প্রস্তুত হলে জগন্নাথ বিশ্ববিদ্যালয়ের অফিসিয়াল ওয়েবসাইটে প্রকাশ করা হবে।",
+    "tags": [
+      "ফলাফল",
+      "রেজাল্ট",
+      "জগন্নাথ_বিশ্ববিদ্যালয়"
+    ],
+    "source": "manual"
+  },
+  {
+    "category": "unit_subject",
+    "sub_category": "unit_a_subjects_en",
+    "question": "What subjects are included in A (science) Unit exam?",
+    "alt_questions": [
+      "A unit subjects",
+      "science unit subjects",
+      "subjects in A unit",
+      "A unit kon kon subject",
+      "এ ইউনিটে কোন বিষয় থাকে"
+    ],
+    "answer": "Physics, Chemistry, and Biology or Mathematics.",
+    "tags": [
+      "a_unit",
+      "science",
+      "subjects"
+    ],
+    "source": "manual"
+  },
+  {
+    "category": "unit_subject",
+    "sub_category": "unit_b_subjects_en",
+    "question": "What subjects come in Unit B (Humanities + Department Change)?",
+    "alt_questions": [
+      "B unit subjects",
+      "humanities unit subjects",
+      "B unit kon kon subject",
+      "বি ইউনিটে কোন বিষয় থাকে"
+    ],
+    "answer": "General Knowledge, Bangla, and English.",
+    "tags": [
+      "b_unit",
+      "humanities",
+      "subjects"
+    ],
+    "source": "manual"
+  },
+  {
+    "category": "unit_subject",
+    "sub_category": "unit_c_subjects_en",
+    "question": "What are the subjects in the C Unit (Faculty of Business Studies) exam?",
+    "alt_questions": [
+      "C unit subjects",
+      "business studies unit subjects",
+      "C unit kon kon subject",
+      "সি ইউনিটে কোন বিষয় থাকে"
+    ],
+    "answer": "English, Mathematical Intelligence, Accounting, and Business Principles and Applications.",
+    "tags": [
+      "c_unit",
+      "business_studies",
+      "subjects"
+    ],
+    "source": "manual"
+  },
+  {
+    "category": "unit_subject",
+    "sub_category": "unit_d_subjects_en",
+    "question": "What subjects are there in D Unit (Humanities + Department Change)?",
+    "alt_questions": [
+      "D unit subjects",
+      "D unit humanities subjects",
+      "D unit kon kon subject",
+      "ডি ইউনিটে কোন বিষয় থাকে"
+    ],
+    "answer": "General Knowledge, Bengali, and English.",
+    "tags": [
+      "d_unit",
+      "humanities",
+      "subjects"
+    ],
+    "source": "manual"
+  },
+  {
+    "category": "unit_subject",
+    "sub_category": "unit_a_marks_en",
+    "question": "How many marks are there in the exam for which subject in this A unit science section?",
+    "alt_questions": [
+      "A unit marks distribution",
+      "science unit marks",
+      "A unit subject wise marks",
+      "এ ইউনিটে কোন বিষয়ে কত নম্বর"
+    ],
+    "answer": "MCQ: Physics 8 marks, Chemistry 8 marks, Biology or Mathematics 8 marks. Written: Physics 16 marks, Chemistry 16 marks, Biology or Mathematics 16 marks.",
+    "tags": [
+      "a_unit",
+      "marks",
+      "mcq",
+      "written"
+    ],
+    "source": "manual"
+  },
+  {
+    "category": "unit_subject",
+    "sub_category": "unit_b_marks_en",
+    "question": "How many marks are there in the exam for which subject in B Unit Humanities + Department Change?",
+    "alt_questions": [
+      "B unit marks distribution",
+      "B unit subject wise marks",
+      "বি ইউনিটে কোন বিষয়ে কত নম্বর"
+    ],
+    "answer": "MCQ: General Knowledge 8 marks, Bangla 8 marks, English 8 marks. Written: General Knowledge 16 marks, Bangla 16 marks, English 16 marks.",
+    "tags": [
+      "b_unit",
+      "marks",
+      "mcq",
+      "written"
+    ],
+    "source": "manual"
+  },
+  {
+    "category": "unit_subject",
+    "sub_category": "unit_c_marks_en",
+    "question": "In which subject is the exam conducted in the C Unit Business Education Department?",
+    "alt_questions": [
+      "C unit marks distribution",
+      "business unit subject wise marks",
+      "সি ইউনিটে কোন বিষয়ে কত নম্বর"
+    ],
+    "answer": "MCQ: Mathematical Intelligence 8 marks, Accounting and Business Policy and Application 8 marks, English 8 marks. Written: Mathematical Intelligence 16 marks, Accounting and Business Policy and Application 16 marks, English 16 marks.",
+    "tags": [
+      "c_unit",
+      "marks",
+      "business_studies"
+    ],
+    "source": "manual"
+  },
+  {
+    "category": "unit_subject",
+    "sub_category": "unit_d_marks_en",
+    "question": "D Unit Humanities + Department Change in which subject is the exam conducted?",
+    "alt_questions": [
+      "D unit marks distribution",
+      "D unit subject wise marks",
+      "ডি ইউনিটে কোন বিষয়ে কত নম্বর"
+    ],
+    "answer": "MCQ: General Knowledge and IQ 8 marks, Bengali 8 marks, English 8 marks. Written: General Knowledge and IQ 16 marks, Bengali 16 marks, English 16 marks.",
+    "tags": [
+      "d_unit",
+      "marks",
+      "humanities"
+    ],
+    "source": "manual"
+  },
+  {
+    "category": "unit_subject",
+    "sub_category": "unit_a_subjects_bn",
+    "question": "এ ইউনিটের পরীক্ষায় কোন কোন বিষয় থাকে?",
+    "alt_questions": [
+      "এ ইউনিটে কোন বিষয় থাকে",
+      "science unit subject",
+      "A unit subject koto"
+    ],
+    "answer": "পদার্থবিজ্ঞান, রসায়ন, জীববিজ্ঞান অথবা গণিত।",
+    "tags": [
+      "এ_ইউনিট",
+      "বিজ্ঞান",
+      "বিষয়"
+    ],
+    "source": "manual"
+  },
+  {
+    "category": "unit_subject",
+    "sub_category": "unit_b_subjects_bn",
+    "question": "বি ইউনিটে (মানবিক+বিভাগ পরিবর্তন) কোন কোন বিষয় থাকে?",
+    "alt_questions": [
+      "বি ইউনিটে কোন বিষয়",
+      "humanities unit subject",
+      "B unit subject koto"
+    ],
+    "answer": "সাধারণ জ্ঞান, বাংলা এবং ইংরেজি।",
+    "tags": [
+      "বি_ইউনিট",
+      "মানবিক",
+      "বিষয়"
+    ],
+    "source": "manual"
+  },
+  {
+    "category": "unit_subject",
+    "sub_category": "unit_c_subjects_bn",
+    "question": "সি ইউনিটের (বিজনেস স্টাডিজ অনুষদ) পরীক্ষায় কোন কোন বিষয় থাকে?",
+    "alt_questions": [
+      "সি ইউনিটে কোন বিষয়",
+      "business unit subject",
+      "C unit subject koto"
+    ],
+    "answer": "ইংরেজি, গাণিতিক বুদ্ধিমত্তা, হিসাববিজ্ঞান এবং ব্যবসায়নীতি ও প্রয়োগ।",
+    "tags": [
+      "সি_ইউনিট",
+      "ব্যবসায়_শিক্ষা",
+      "বিষয়"
+    ],
+    "source": "manual"
+  },
+  {
+    "category": "unit_subject",
+    "sub_category": "unit_d_subjects_bn",
+    "question": "ডি ইউনিটে (মানবিক+বিভাগ পরিবর্তন) কোন কোন বিষয় থাকে?",
+    "alt_questions": [
+      "ডি ইউনিটে কোন বিষয়",
+      "D unit subject koto"
+    ],
+    "answer": "সাধারণ জ্ঞান, বাংলা এবং ইংরেজি।",
+    "tags": [
+      "ডি_ইউনিট",
+      "মানবিক",
+      "বিষয়"
+    ],
+    "source": "manual"
+  },
+  {
+    "category": "unit_subject",
+    "sub_category": "unit_a_marks_bn",
+    "question": "এ ইউনিট বিজ্ঞান বিভাগে কোন বিষয়ে কত নম্বরে পরীক্ষায় হয়?",
+    "alt_questions": [
+      "এ ইউনিটে মার্ক বণ্টন",
+      "science unit marks"
+    ],
+    "answer": "এমসিকিউ: পদার্থবিজ্ঞান ৮, রসায়ন ৮, জীববিজ্ঞান বা গণিত ৮ মার্ক। লিখিত: পদার্থবিজ্ঞান ১৬, রসায়ন ১৬, জীববিজ্ঞান বা গণিত ১৬ মার্ক।",
+    "tags": [
+      "এ_ইউনিট",
+      "মার্ক",
+      "এমসিকিউ",
+      "লিখিত"
+    ],
+    "source": "manual"
+  },
+  {
+    "category": "unit_subject",
+    "sub_category": "unit_b_marks_bn",
+    "question": "বি ইউনিট মানবিক+বিভাগ পরিবর্তন বিভাগে কোন বিষয়ে কত নম্বরে পরীক্ষায় হয়?",
+    "alt_questions": [
+      "বি ইউনিটে মার্ক বণ্টন",
+      "B unit marks"
+    ],
+    "answer": "এমসিকিউ: সাধারণ জ্ঞান ৮, বাংলা ৮, ইংরেজি ৮ মার্ক। লিখিত: সাধারণ জ্ঞান ১৬, বাংলা ১৬, ইংরেজি ১৬ মার্ক।",
+    "tags": [
+      "বি_ইউনিট",
+      "মার্ক",
+      "মানবিক"
+    ],
+    "source": "manual"
+  },
+  {
+    "category": "unit_subject",
+    "sub_category": "unit_c_marks_bn",
+    "question": "সি ইউনিট ব্যবসায় শিক্ষা বিভাগে কোন বিষয়ে কত নম্বরে পরীক্ষায় হয়?",
+    "alt_questions": [
+      "সি ইউনিটে মার্ক বণ্টন",
+      "C unit marks"
+    ],
+    "answer": "এমসিকিউ: গাণিতিক বুদ্ধিমত্তা ৮, হিসাববিজ্ঞান ও ব্যবসায়নীতি ও প্রয়োগ ৮, ইংরেজি ৮ মার্ক। লিখিত: গাণিতিক বুদ্ধিমত্তা ১৬, হিসাববিজ্ঞান ও ব্যবসায়নীতি ও প্রয়োগ ১৬, ইংরেজি ১৬ মার্ক।",
+    "tags": [
+      "সি_ইউনিট",
+      "মার্ক",
+      "ব্যবসায়_শিক্ষা"
+    ],
+    "source": "manual"
+  },
+  {
+    "category": "unit_subject",
+    "sub_category": "unit_d_marks_bn",
+    "question": "ডি ইউনিট মানবিক+বিভাগ পরিবর্তন কোন বিষয়ে কত নম্বরে পরীক্ষায় হয়?",
+    "alt_questions": [
+      "ডি ইউনিটে মার্ক বণ্টন",
+      "D unit marks"
+    ],
+    "answer": "এমসিকিউ: সাধারণ জ্ঞান ও আইকিউ ৮, বাংলা ৮, ইংরেজি ৮ মার্ক। লিখিত: সাধারণ জ্ঞান ও আইকিউ ১৬, বাংলা ১৬, ইংরেজি ১৬ মার্ক।",
+    "tags": [
+      "ডি_ইউনিট",
+      "মার্ক",
+      "মানবিক"
+    ],
+    "source": "manual"
+  },
+  {
+    "category": "admission_test_2025",
+    "sub_category": "unit_a_exam_date_en",
+    "question": "When will the A Unit Faculty of Science and Life & Earth Science Department exam be held?",
+    "alt_questions": [
+      "A unit exam date",
+      "A unit science exam date",
+      "When is A unit exam 2025",
+      "A unit exam kobe"
+    ],
+    "answer": "The A Unit Faculty of Science and the Department of Life and Earth Sciences exam will be held on Thursday, December 20, 2025.",
+    "tags": [
+      "a_unit",
+      "exam_date",
+      "science"
+    ],
+    "source": "manual"
+  },
+  {
+    "category": "admission_test_2025",
+    "sub_category": "unit_b_exam_date_en",
+    "question": "When will the B Unit Faculty of Arts and Law exam be held?",
+    "alt_questions": [
+      "B unit exam date",
+      "Arts unit exam date",
+      "When is B unit exam 2026",
+      "B unit exam kobe"
+    ],
+    "answer": "The B Unit Faculty of Arts and Law exam will be held on Friday, January 10, 2026.",
+    "tags": [
+      "b_unit",
+      "exam_date",
+      "arts",
+      "law"
+    ],
+    "source": "manual"
+  },
+  {
+    "category": "admission_test_2025",
+    "sub_category": "unit_c_exam_date_en",
+    "question": "When will the C Unit Faculty of Business Studies exam be held?",
+    "alt_questions": [
+      "C unit exam date",
+      "Business unit exam date",
+      "When is C unit exam",
+      "C unit exam kobe"
+    ],
+    "answer": "The C Unit Faculty of Business Studies exam will be held on Saturday, December 27, 2025.",
+    "tags": [
+      "c_unit",
+      "exam_date",
+      "business_studies"
+    ],
+    "source": "manual"
+  },
+  {
+    "category": "admission_test_2025",
+    "sub_category": "unit_d_exam_date_en",
+    "question": "When will the D Unit Faculty of Social Science exam be held?",
+    "alt_questions": [
+      "D unit exam date",
+      "Social science unit exam date",
+      "When is D unit exam",
+      "D unit exam kobe"
+    ],
+    "answer": "The D Unit Faculty of Social Sciences exam will be held on Friday, January 3, 2026.",
+    "tags": [
+      "d_unit",
+      "exam_date",
+      "social_science"
+    ],
+    "source": "manual"
+  },
+  {
+    "category": "admission_test_2025",
+    "sub_category": "unit_e_exam_date_en",
+    "question": "When will the E Unit Faculty of Fine Arts exam be held?",
+    "alt_questions": [
+      "E unit exam date",
+      "Fine arts unit exam date",
+      "When is E unit exam",
+      "E unit exam kobe"
+    ],
+    "answer": "The E Unit Faculty of Fine Arts exam will be held on Saturday, December 13, 2025.",
+    "tags": [
+      "e_unit",
+      "exam_date",
+      "fine_arts"
+    ],
+    "source": "manual"
+  },
+  {
+    "category": "admission_test_2025",
+    "sub_category": "unit_a_exam_date_bn",
+    "question": "এ ইউনিট বিজ্ঞান অনুষদ এবং জীবন ও আর্থ বিজ্ঞান বিভাগের পরীক্ষা কখন অনুষ্ঠিত হবে?",
+    "alt_questions": [
+      "এ ইউনিটের পরীক্ষা কবে",
+      "A unit exam date bangla",
+      "এ ইউনিট বিজ্ঞান পরীক্ষা"
+    ],
+    "answer": "এ ইউনিট বিজ্ঞান অনুষদ এবং জীবন ও আর্থ বিজ্ঞান বিভাগের পরীক্ষা ২০ ডিসেম্বর, ২০২৫ বৃহস্পতিবার অনুষ্ঠিত হবে।",
+    "tags": [
+      "এ_ইউনিট",
+      "পরীক্ষার_তারিখ",
+      "বিজ্ঞান"
+    ],
+    "source": "manual"
+  },
+  {
+    "category": "admission_test_2025",
+    "sub_category": "unit_b_exam_date_bn",
+    "question": "বি ইউনিট কলা ও আইন অনুষদের পরীক্ষা কখন অনুষ্ঠিত হবে?",
+    "alt_questions": [
+      "বি ইউনিটের পরীক্ষা কবে",
+      "B unit exam date bangla"
+    ],
+    "answer": "বি ইউনিট কলা ও আইন অনুষদের পরীক্ষা ১০ জানুয়ারি, ২০২৬ শুক্রবার অনুষ্ঠিত হবে।",
+    "tags": [
+      "বি_ইউনিট",
+      "পরীক্ষার_তারিখ",
+      "কলা",
+      "আইন"
+    ],
+    "source": "manual"
+  },
+  {
+    "category": "admission_test_2025",
+    "sub_category": "unit_c_exam_date_bn",
+    "question": "সি ইউনিট ব্যবসায় শিক্ষা অনুষদের পরীক্ষা কখন অনুষ্ঠিত হবে?",
+    "alt_questions": [
+      "সি ইউনিটের পরীক্ষা কবে",
+      "C unit exam date bangla"
+    ],
+    "answer": "সি ইউনিট ব্যবসায় শিক্ষা অনুষদের পরীক্ষা ২৭ ডিসেম্বর, ২০২৫ শনিবার অনুষ্ঠিত হবে।",
+    "tags": [
+      "সি_ইউনিট",
+      "পরীক্ষার_তারিখ",
+      "ব্যবসায়_শিক্ষা"
+    ],
+    "source": "manual"
+  },
+  {
+    "category": "admission_test_2025",
+    "sub_category": "unit_d_exam_date_bn",
+    "question": "ডি ইউনিট সামাজিক বিজ্ঞান অনুষদের পরীক্ষা কখন অনুষ্ঠিত হবে?",
+    "alt_questions": [
+      "ডি ইউনিটের পরীক্ষা কবে",
+      "D unit exam date bangla"
+    ],
+    "answer": "ডি ইউনিট সামাজিক বিজ্ঞান অনুষদের পরীক্ষা ৩ জানুয়ারি, ২০২৬ শুক্রবার অনুষ্ঠিত হবে।",
+    "tags": [
+      "ডি_ইউনিট",
+      "পরীক্ষার_তারিখ",
+      "সামাজিক_বিজ্ঞান"
+    ],
+    "source": "manual"
+  },
+  {
+    "category": "admission_test_2025",
+    "sub_category": "unit_e_exam_date_bn",
+    "question": "ই ইউনিট চারুকলা অনুষদের পরীক্ষা কখন অনুষ্ঠিত হবে?",
+    "alt_questions": [
+      "ই ইউনিটের পরীক্ষা কবে",
+      "E unit exam date bangla"
+    ],
+    "answer": "ই ইউনিট চারুকলা অনুষদের পরীক্ষা ১৩ ডিসেম্বর, ২০২৫ শনিবার অনুষ্ঠিত হবে।",
+    "tags": [
+      "ই_ইউনিট",
+      "পরীক্ষার_তারিখ",
+      "চারুকলা"
+    ],
+    "source": "manual"
+  },
+  {
+    "category": "admission_circular",
+    "sub_category": "circular_published",
+    "question": "Has the undergraduate admission Test Circular been published for the 2025-2026 academic year?",
+    "alt_questions": [],
+    "answer": "Yes, the Undergraduate Admission Test Circular for the academic year 2025–2026 has been published. Click the link below to view the detailed circular.",
+    "pdf_link": "PDF_LINK_HERE",
+    "is_default": true,
+    "show_on_frontend": true,
+    "tags": [
+      "admission circular",
+      "2025-2026",
+      "undergraduate"
+    ],
+    "source": "official_notice"
+  },
+  {
+    "category": "application_procedure",
+    "sub_category": "how_to_apply",
+    "question": "Application procedure for Undergraduate Admission Test (2025-2026).",
+    "alt_questions": [],
+    "answer": "Click the link below to view the complete application procedure for the Undergraduate Admission Test (2025–2026).",
+    "pdf_link": "PDF_LINK_HERE",
+    "is_default": true,
+    "show_on_frontend": true,
+    "tags": [
+      "application procedure",
+      "apply"
+    ],
+    "source": "official_notice"
+  },
+  {
+    "category": "payment_process",
+    "sub_category": "payment_steps",
+    "question": "Payment process for the Undergraduate (Honours) Admission Test 2025-2026",
+    "alt_questions": [],
+    "answer": "To know the payment process for the Undergraduate (Honours) Admission Test (2025–2026), please click the link below.",
+    "pdf_link": "PDF_LINK_HERE",
+    "is_default": true,
+    "show_on_frontend": true,
+    "tags": [
+      "payment",
+      "admission fee"
+    ],
+    "source": "official_notice"
+  },
+  {
+    "category": "important_links",
+    "sub_category": "apply_link",
+    "question": "Apply for Undergraduate Admission",
+    "alt_questions": [],
+    "answer": "Click the link below to apply for the Undergraduate Admission Test.",
+    "external_link": "DEMO_APPLY_LINK",
+    "is_default": true,
+    "show_on_frontend": true,
+    "tags": [
+      "apply",
+      "important link"
+    ],
+    "source": "official_notice"
+  },
+  {
+    "category": "important_links",
+    "sub_category": "official_website",
+    "question": "Jagannath University Official Website",
+    "alt_questions": [],
+    "answer": "Visit the official website of Jagannath University using the link below.",
+    "external_link": "DEMO_WEBSITE_LINK",
+    "is_default": true,
+    "show_on_frontend": true,
+    "tags": [
+      "website",
+      "jnu"
+    ],
+    "source": "official_notice"
+  }
+]

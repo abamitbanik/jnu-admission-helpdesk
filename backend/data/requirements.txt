@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+pymongo
+python-dotenv
+pydantic
+google-genai
+torch
+transformers sentencepiece protobuf
