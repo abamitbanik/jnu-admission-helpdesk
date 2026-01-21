@@ -15,7 +15,7 @@
 <body>
   <div class="page">
 
-    <!-- ✅ FIXED HEADER -->
+    <!-- FIXED HEADER -->
     <header class="header">
       <div class="brand">
         <img class="brand-logo" src="assets/logo.png" alt="JNU Logo"/>
@@ -30,7 +30,7 @@
     </header>
 
     <main class="main">
-      <!-- ✅ LEFT SIDEBAR -->
+      <!-- LEFT SIDEBAR -->
       <aside class="sidebar">
         <div class="campus-wrap">
           <img class="campus" src="assets/campus.png" alt="JNU Campus"/>
@@ -49,7 +49,7 @@
           <button class="dd-item" onclick="showQuestions('apply')">Application Procedure <span class="caret">▼</span></button>
           <button class="dd-item" onclick="showQuestions('payment')">Payment Process <span class="caret">▼</span></button>
 
-          <!-- ✅ NEW: QUESTIONS SHOW INSIDE SIDEBAR (NO MORE BELOW CHAT) -->
+          <!-- QUESTIONS SHOW INSIDE SIDEBAR (NO MORE BELOW CHAT) -->
           <div class="sidebar-qa">
             <div id="panelTitle" class="panel-title"></div>
             <ol id="questionList" class="sidebar-qa-list"></ol>
@@ -63,12 +63,12 @@
         </ul>
       </aside>
 
-      <!-- ✅ RIGHT CONTENT -->
+      <!--  RIGHT CONTENT -->
       <section class="content">
-        <!-- ✅ Status (backend connected / not connected) -->
+        <!--  Status (backend connected / not connected) -->
         <div id="status" class="status hidden"></div>
 
-        <!-- ✅ CHAT PANEL (fixed container; only messages scroll) -->
+        <!-- CHAT PANEL (fixed container; only messages scroll) -->
         <div class="chat-area">
           <div id="answerBox" class="answer-panel">
 
@@ -78,7 +78,7 @@
               <button class="clear-btn" onclick="clearChat()">Clear Chat</button>
             </div>
 
-            <!-- ✅ ONLY THIS PART SCROLLS -->
+            <!--  ONLY THIS PART SCROLLS -->
             <div id="chatMessages" class="chat-messages"></div>
 
             <!-- bottom input bar -->
@@ -95,7 +95,7 @@
           </div>
         </div>
 
-        <!-- ✅ OLD qa-panel REMOVED (questions are now in sidebar) -->
+        <!--  OLD qa-panel REMOVED (questions are now in sidebar) -->
       </section>
     </main>
 
@@ -103,8 +103,8 @@
   </div>
 
   <script>
-  // লোকালে কিছু না দিলে script.js ডিফল্ট http://127.0.0.1:8000 নেবে
-  // লাইভে এখানে Render backend URL বসবে:
+
+  // Render backend URL
   window.BACKEND_URL = "https://jnu-admission-helpdesk.onrender.com";
 </script>
 <script src="script.js"></script>
