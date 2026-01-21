@@ -42,7 +42,7 @@ function setSessionId(sid){
 function qs(id){ return document.getElementById(id); }
 
 /* =========================================================
-   ✅ Empty-state controller
+   Empty-state controller
    ========================================================= */
 function updateEmptyState(){
   const box = qs("answerBox");
@@ -53,7 +53,7 @@ function updateEmptyState(){
   box.classList.toggle("is-empty", !hasMsgs);
 }
 
-/* ✅ Sidebar QA container show/hide */
+/* Sidebar QA container show/hide */
 function updateSidebarQaVisibility(){
   const wrap = document.querySelector(".sidebar-qa");
   const list = qs("questionList");
@@ -71,7 +71,7 @@ function toggleDropdown(id){
   const willOpen = el.classList.contains("hidden");
   el.classList.toggle("hidden");
 
-  // ✅ Dropdown বন্ধ করলে section title + questions সব reset (আপনার চাওয়া অনুযায়ী)
+  // Dropdown বন্ধ করলে section title + questions সব reset hoba
   if (!willOpen){
     clearQuestions();
   }
@@ -91,7 +91,7 @@ function clearQuestions(){
   }
 
   activeCategory = null;
-  updateSidebarQaVisibility(); // ✅ fully hide sidebar-qa
+  updateSidebarQaVisibility(); // fully hide sidebar-qa
 }
 
 function showQuestions(type){
@@ -99,7 +99,7 @@ function showQuestions(type){
   const title = qs("panelTitle");
   if (!list || !title) return;
 
-  // ✅ same section clicked again -> hide (toggle)
+  //  same section clicked again -> hide (toggle)
   if(activeCategory === type){
     clearQuestions();
     return;
@@ -113,9 +113,9 @@ function showQuestions(type){
     payment: "Payment Process"
   };
 
-  // আপনি title দেখাতে না চাইলে hidden থাকবে (CSS এ hidden করা আছে)
+  // title hidden থাকবে (CSS এ hidden করা আছে)
   title.innerText = titleMap[type] || "Questions";
-  title.classList.add("hidden"); // ✅ title UI এ না দেখানোর জন্য
+  title.classList.add("hidden"); //  title UI এ না দেখানোর জন্য
 
   list.innerHTML = "";
 
@@ -135,7 +135,7 @@ function showQuestions(type){
     list.appendChild(li);
   });
 
-  updateSidebarQaVisibility(); // ✅ show panel when has questions
+  updateSidebarQaVisibility(); // show panel when has questions
 }
 window.showQuestions = showQuestions;
 
@@ -283,7 +283,7 @@ function appendBotMessage(answerText, meta){
   saveChat();
 }
 
-/* ✅ Typing indicator bubble */
+/* Typing indicator bubble */
 function appendTypingBubble(){
   const chat = getChatBox();
   if (!chat) return;
