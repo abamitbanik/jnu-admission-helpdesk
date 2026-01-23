@@ -339,7 +339,7 @@ async function checkBackend(){
     const r = await fetch(BACKEND + "/health", { method: "GET" });
     if(!r.ok) throw new Error("health not ok");
 
-    setStatus("ok", "✅ Backend connected");
+    setStatus("ok", "✅ Server connected");
     if (btn) btn.disabled = false;
 
     if (connectedHideTimer) clearTimeout(connectedHideTimer);
