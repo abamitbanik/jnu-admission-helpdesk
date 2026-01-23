@@ -40,7 +40,7 @@ from slots import (
 from actions import detect_action_intent
 
 
-# ✅ Force-load .env from backend/.env (no matter where uvicorn runs)
+# Force-load .env from backend/.env (no matter where uvicorn runs)
 ENV_PATH = Path(__file__).resolve().parent / ".env"
 load_dotenv(dotenv_path=ENV_PATH)
 
@@ -203,7 +203,7 @@ def tokenize_keywords(text: str) -> List[str]:
 def extract_unit_code(text: str) -> Optional[str]:
     t = normalize_typo_tolerant(text)
 
-    # ✅ NEW: user replies only the letter (a/b/c/d/e)
+    # NEW: user replies only the letter (a/b/c/d/e)
     if re.fullmatch(r"[a-e]", t.strip()):
         return t.strip()
 
@@ -343,7 +343,7 @@ def build_context_from_fact_and_chunks(
         uniq.append(s)
 
     context_text = "\n\n".join([p for p in parts if p]).strip()
-        # ✅ Make updated_at JSON/Pydantic safe (datetime -> string)
+        #  Make updated_at JSON/Pydantic safe (datetime -> string)
     if updated_at is not None and not isinstance(updated_at, str):
         try:
             updated_at = updated_at.isoformat()
@@ -544,10 +544,10 @@ def chat(payload: ChatIn):
                 "chunk_ids": 1,
                 "chunk_id": 1,
 
-                # ✅ Router support (MUST)
+                #  Router support (MUST)
                 "route_to_intent_by_unit": 1,
 
-                # ✅ New (optional, non-breaking): slot filling schema
+                #  New (optional, non-breaking): slot filling schema
                 "required_slots": 1,
                 "slot_questions": 1,
             },
@@ -727,7 +727,7 @@ def chat(payload: ChatIn):
 
     context_text, ui_sources, ui_updated_at = build_context_from_fact_and_chunks(fact_doc, chunk_docs)
 
-    # ✅ Force DB answer if DB returned anything (ignore similarity thresholds)
+    #  Force DB answer if DB returned anything (ignore similarity thresholds)
     if fact_doc or chunk_docs:
         db_direct = True
         gemini_compose = False
@@ -747,7 +747,7 @@ def chat(payload: ChatIn):
         if not answer:
             answer = "দুঃখিত—এই বিষয়ে পর্যাপ্ত তথ্য ডাটাবেজে পাওয়া যায়নি। অফিসিয়াল নোটিশ/ওয়েবসাইট দেখে নিশ্চিত করুন।"
 
-        # ✅ NEW: make DB answer sound natural (grounded rewrite)
+        #  NEW: make DB answer sound natural (grounded rewrite)
         answer = paraphrase_grounded_answer(
             answer=answer,
             user_msg=msg,
