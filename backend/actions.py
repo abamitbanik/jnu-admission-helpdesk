@@ -1,12 +1,7 @@
 """Action / automation catalog.
 
-এই ফাইলটা intentionally lightweight রাখা হয়েছে যাতে আপনার বর্তমান backend–frontend কানেকশন ভেঙে না যায়।
+backend–frontend কানেকশন।
 
-আপনি পরে চাইলে এখানে official site scrape/check logic যোগ করে:
-  - subscriptions collection এ save
-  - scheduler থেকে periodic check
-  - notifications collection এ insert
-করতে পারবেন।
 """
 
 from typing import Any, Dict, Optional, Tuple
