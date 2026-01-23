@@ -1,8 +1,8 @@
 """Scheduler skeleton (APScheduler).
 
-✅ ডিফল্টভাবে এই scheduler চালু করা নেই (যাতে production এ surprise background thread না চলে)।
+ডিফল্টভাবে এই scheduler চালু করা নেই (যাতে production এ surprise background thread না চলে)।
 
-যদি আপনি automation চালু করতে চান:
+যদিি automation চালু করতে চাই:
   1) requirements.txt এ apscheduler install করুন
   2) main.py তে startup event এ start_scheduler() কল করুন
   3) jobs এর ভিতরে official sources check করে notifications collection update করুন
